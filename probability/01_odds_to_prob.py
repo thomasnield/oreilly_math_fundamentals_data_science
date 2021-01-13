@@ -7,4 +7,6 @@ def odds_to_prob(o):
 
 p_x = .75
 o_x = prob_to_odds(p_x)
+
+# prints ODDS: 3.0
 print("ODDS: {}".format(o_x))
