@@ -1,5 +1,5 @@
 # Number of pets each person owns
-sample = [0, 1, 5, 7, 9, 10, 14,15]
+sample = [0, 1, 5, 7, 9, 10, 14]
 
 def median(values):
     ordered = sorted(values)
