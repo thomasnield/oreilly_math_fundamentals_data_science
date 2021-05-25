@@ -1,16 +1,22 @@
-from sympy import *
+from numpy import array
+from numpy.linalg import inv
 
 # 4x + 2y + 4z = 44
 # 5x + 3y + 7z = 56
 # 9x + 3y + 6z = 72
 
-A = Matrix([
+A = array([
     [4, 2, 4],
     [5, 3, 7],
     [9, 3, 6]
 ])
 
-# dot product between A and its inverse
-identity = A.inv() * A
+B = array([
+    44,
+    56,
+    72
+])
 
-print(identity)
+X = inv(A).dot(B)
+
+print(X)
