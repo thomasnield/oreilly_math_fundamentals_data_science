@@ -1,19 +1,27 @@
+"""
+The code below is supposed to calculate the variance and standard deviation 
+for a data sample, but there is an error. 
+
+Fix the code so it returns the correct standard deviation for a sample. 
+
+Then execute the script by typing this command in the terminal:
+python3 task1.py 
+"""
 from math import sqrt
+from post_answer import submit
 
-# Filament samples
-sample = [1.78, 1.75, 1.72, 1.74, 1.77]
-
-def mean(values):
-    return sum(sample) / len(sample)
+# Sample for number of pets each person owns
+sample = [1, 3, 2, 5, 7, 0, 2, 3]
 
 def variance_sample(values):
     mean = sum(values) / len(values)
-    var = sum((v - mean) ** 2 for v in values) / (len(values) - 1.0)
+    var = sum((v - mean) ** 2 for v in values) / len(values)
     return var
 
 def std_dev_sample(values):
     return sqrt(variance_sample(values))
 
+result = std_dev_sample(sample)
 
-print("MEAN = {}".format(mean(sample))) # 1.752
-print("STD DEV = {}".format(std_dev_sample(sample))) # 0.023874672772626667
+# Submits the answer, please don't modify! 
+submit(1, result, 4)
