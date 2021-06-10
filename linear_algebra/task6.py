@@ -8,13 +8,10 @@ and eigenvectors
 Rebuild the original matrix decomposed from these 
 eigenvectors and eigenvalues. 
  
-Complete the code below, then execute the script by 
-typing this command in the terminal:
-python3 task6.py 
+Complete the code below, then execute the script 
 """
 
 from numpy import array, diag
-from post_answer import submit
 
 eigenvals = array([0, 7])
 
