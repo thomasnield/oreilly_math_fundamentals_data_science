@@ -9,7 +9,6 @@ Complete the code below, then execute the script
 """
 
 from numpy import array
-from post_answer import submit
 
 i_hat = array([-3, 2])
 j_hat = array([6, -4])
