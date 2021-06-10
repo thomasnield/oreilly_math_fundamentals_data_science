@@ -1,5 +1,4 @@
 from numpy import array
-from post_answer import submit
 
 """
 Solve for x, y, and z in the following system of equations: 
