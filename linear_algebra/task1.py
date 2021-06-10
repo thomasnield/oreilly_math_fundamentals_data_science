@@ -8,7 +8,6 @@ Complete the code below, then execute the script by
 typing this command in the terminal:
 python3 task1.py 
 """
-from post_answer import submit
 from numpy import array
 
 data = ?
