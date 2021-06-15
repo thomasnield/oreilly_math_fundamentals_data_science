@@ -35,7 +35,7 @@ w = basis.dot(v)
 On line 19, declare the basis vectors into a packaged matrix. 
 
 ```
-basis = array([i_hat, j_hat])
+basis = array([i_hat, j_hat]).transpose()
 ```
 
 On line 21, calculate the determinant. 
