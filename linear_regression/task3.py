@@ -14,7 +14,6 @@ python3 task3.py
 """
 
 import pandas as pd
-from post_answer import submit
 from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv('https://bit.ly/2QhRLDk')
