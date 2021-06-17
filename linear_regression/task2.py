@@ -8,7 +8,6 @@ Do this from scratch or use sklearn.
 Then execute the script by typing this command in the terminal:
 python3 task2.py 
 """
-from post_answer import submit
 
 slope = 2.0
 y_intercept = 5.5
