@@ -12,7 +12,6 @@ python3 task1.py
 """
 import math
 from itertools import accumulate
-from post_answer import submit
 
 inputs = [4.4, 4.6, 4.9, 5.2, 6.0, 6.2]
 outputs = [1.0, 1.0, 0.0, 1.0, 0.0, 0.0]
