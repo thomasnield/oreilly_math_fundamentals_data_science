@@ -1,5 +1,5 @@
 def f(x,y,z):
-    return (x+10)**2 + (y-3)**2 + (z-1)**2
+    return (x+10)**2 + (y-3)**2 + (1-z)**2
 
 def dx_f(x):
     return 2*(x+10)
