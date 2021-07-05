@@ -5,6 +5,10 @@ mean = 18
 std_dev = 1.5
 
 # Probability of 16 or less days
-x = norm.cdf(16, mean, std_dev)
+p_value = norm.cdf(16, mean, std_dev)
 
-print(x) # 0.09121121972586788
+print("1-tailed P-value: ", p_value) 
+if p_value <= norm.ppf(.05):
+    print("Passes 1-tailed test")
+else:
+    print("Fails 1-tailed test")
