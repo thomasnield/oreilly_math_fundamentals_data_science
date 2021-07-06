@@ -1,8 +1,9 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
+# TODO: Resear
 # Load the data
 df = pd.read_csv('https://bit.ly/3cManTi', delimiter=",")
 
@@ -19,12 +20,8 @@ model.fit(X_train, Y_train)
 prediction = model.predict(X_test)
 
 '''
-The confusion matrix evaluates accuracy within each category.
-[[truepositives falsenegatives]
- [falsepositives truenegatives]]
- 
-The diagnal represents correct predictions, so we want those to be higher
+The classification report gives helpful metrics expanding on the confusion matrix
 '''
-matrix = confusion_matrix(y_true=Y_test, y_pred=prediction, normalize='true')
-print(matrix)
+report = classification_report(Y_test, prediction)
+print(report)
 
