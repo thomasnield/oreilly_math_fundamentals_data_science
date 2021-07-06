@@ -10,6 +10,16 @@ total_likelihood = 1.0
 for input, output in zip(inputs, outputs): 
     total_likelihood *= logistic_function(input) if output == 1.0 else 1.0 - logistic_function(input) 
 ```
+Alternatively you can use logarithmic addition to avoid floating point underflow, but in this case it should yield the same answer: 
+
+```
+total_likelihood = 0.0
+
+for input, output in zip(inputs, outputs):
+    total_likelihood += math.log(logistic_function(input)) if output == 1.0 else math.log(1.0 - logistic_function(input))
+
+total_likelihood = math.exp(total_likelihood)
+```
 
 ## Task 2
 
