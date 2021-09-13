@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 class Point:
     def __init__(self, x, y):
@@ -47,3 +47,11 @@ for i in range(epochs):
         b -= b_adjust
 
 print("y = {0}x + {1}".format(m, b))
+
+
+# show in chart
+X = np.array([p.x for p in points])
+Y = np.array([p.y for p in points])
+plt.plot(X, Y, 'o') # scatterplot
+plt.plot(X, m*X+b) # line
+plt.show()
