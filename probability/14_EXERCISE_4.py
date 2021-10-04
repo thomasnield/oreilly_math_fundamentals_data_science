@@ -17,8 +17,6 @@ are suspicious of the results as only 1% of the population actually has the dise
 What true positive rate can we expect as we test on the population? 
 
 Complete and run the Python script below to calculate your answer.
-
-Execute with the command: python3 task4.py 
 """
 
 p_true_positive = 198.0 / (198.0 + 2.0)
