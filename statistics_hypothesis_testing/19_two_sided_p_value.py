@@ -12,6 +12,16 @@ p1 = norm.cdf(16, mean, std_dev)
 p2 = p1
 
 # P-value of both tails
+# I could have also just multiplied by 2 
 p_value = p1 + p2
 
-print(p_value) # 0.18242243945173575
+print("2-tailed P-value", p_value)
+if p_value <= .05:
+    print("Passes 2-tailed test")
+else:
+    print("Fails 2-tailed test")
+
+
+# There is an 18.24% probability my results
+# were due to random luck, rather than because
+# my drug made an impact 
