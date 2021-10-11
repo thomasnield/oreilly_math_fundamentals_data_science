@@ -1,4 +1,3 @@
-from post_answer import submit
 
 """
 A market researcher estimates that the Z-Phone 
@@ -21,5 +20,4 @@ std_dev = 8
 
 x = norm.cdf(30, mean, std_dev) 
 
-# Submits the answer, please don't modify! 
-submit(2, x, 4)
+print(x)
