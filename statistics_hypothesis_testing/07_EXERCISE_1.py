@@ -8,7 +8,6 @@ Then execute the script by typing this command in the terminal:
 python3 task1.py 
 """
 from math import sqrt
-from post_answer import submit
 
 # Sample for number of pets each person owns
 sample = [1, 3, 2, 5, 7, 0, 2, 3]
@@ -23,5 +22,4 @@ def std_dev_sample(values):
 
 result = std_dev_sample(sample)
 
-# Submits the answer, please don't modify! 
-submit(1, result, 4)
+print(result)

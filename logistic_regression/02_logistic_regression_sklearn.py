@@ -1,21 +1,22 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 
-data = pd.read_csv("https://tinyurl.com/y2cocoo7")
+# Load the data
+df = pd.read_csv('https://bit.ly/33ebs2R', delimiter=",")
 
-# grab independent variable column
-inputs = data.iloc[:, :-1]
+# Extract input variables (all rows, all columns but last column)
+X = df.values[:, :-1]
 
-# grab dependent variable column
-output = data.iloc[:, -1]
+# Extract output column (all rows, last column)
+Y = df.values[:, -1]
 
-# build logistic regression, note CVLogisticRegression is also recommended to use cross-validation
-fit = LogisticRegression().fit(inputs, output)
+# Perform logistic regression
+# Turn off penalty
+model = LogisticRegression(penalty='none')
+model.fit(X, Y)
 
-# Print coefficients:
-print("COEFFICIENTS: {0}".format(fit.coef_.flatten()))
-print("INTERCEPT: {0}".format(fit.intercept_.flatten()))
+# print beta1
+print(model.coef_.flatten()) # 0.69267212
 
-# Test a prediction
-print("x=1.5, y={0}".format(fit.predict([[1.5]])))
-print("x=18.5, y={0}".format(fit.predict([[18.5]])))
+# print beta0
+print(model.intercept_.flatten()) # -3.17576395
