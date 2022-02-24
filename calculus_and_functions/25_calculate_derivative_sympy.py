@@ -10,9 +10,5 @@ f = x**2
 dx_f = diff(f)
 print(dx_f) # prints 2*x
 
-# Now just use Python syntax 
-# to declare function
-f = x**2
-
 # Calculate the slope at x = 2
 print(dx_f.subs(x,2)) # prints 4
