@@ -25,7 +25,7 @@ best_loss = 10000000000000.0  # Initialize with a really large value
 
 for i in range(epochs):
 
-    # Randomly adjust "m" or "b"
+    # Randomly adjust "m" and "b"
 
     m_adjust = np.random.normal()
     b_adjust = np.random.normal()
