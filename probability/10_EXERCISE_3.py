@@ -9,7 +9,6 @@ What is the probability it will rain and your umbrella will arrive on time?
 
 Complete and run the Python script below to calculate your answer.
 
-Execute with the command: python3 task3.py 
 """
 p_rain = .30
 p_umbrella_on_time = .40
