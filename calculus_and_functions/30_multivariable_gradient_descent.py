@@ -2,13 +2,13 @@ def f(x,y,z):
     return (x+10)**2 + (y-3)**2 + (1-z)**2
 
 def dx_f(x):
-    return 2*(x+10)
+    return 2*x + 20
 
 def dy_f(y):
-    return 2*(y-3)
+    return 2*y - 6
 
 def dz_f(z):
-    return 2*(z-1)
+    return 2*z - 2
 
 L = 0.0001  # The learning rate
 epochs = 1000000  # The number of iterations to perform gradient descent
