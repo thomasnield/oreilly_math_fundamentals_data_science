@@ -1,0 +1,14 @@
+name: base
+# channels:
+#   - conda-forge
+#   - defaults
+dependencies:
+  - ipykernel
+  - matplotlib
+  - numpy
+  - scipy
+  - sympy
+  - scikit-learn
+# variables:
+#   VAR1: valueA
+#   VAR2: valueB
