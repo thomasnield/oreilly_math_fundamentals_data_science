@@ -19,6 +19,16 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "conda init bash",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.vscode-pull-request-github",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"ms-python.isort"
+			]
+		}
+	},
 
 	// Configure tool-specific properties.
 	// "customizations": {},
