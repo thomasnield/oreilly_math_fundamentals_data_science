@@ -1,8 +1,6 @@
 import random
-
 import numpy as np
 import pandas as pd
-
 
 class Point:
     def __init__(self, x1, x2, y):
@@ -21,10 +19,8 @@ b0 = 0.0
 b1 = 0.0
 b2 = 0.0
 
-epochs = 100_000  # The number of iterations to perform
-
+epochs = 100_000  # The number of iterations to perform=
 n = float(len(points))  # Number of points
-
 best_loss = 10000000000000.0  # Initialize with a really large value
 
 for i in range(epochs):
@@ -49,7 +45,7 @@ for i in range(epochs):
 
     # If loss has improved, keep new values. Otherwise revert.
     if new_loss < best_loss:
-        print("z = {0} + {1}x + {2}y".format(b0, b1, b2))
+        print("y = {0} + {1}x1 + {2}x2".format(b0, b1, b2))
         best_loss = new_loss
     else:
         if random_b == 0:
@@ -59,4 +55,4 @@ for i in range(epochs):
         elif random_b == 2:
             b2 -= random_adjust
 
-print("z = {0} + {1}x + {2}y".format(b0, b1, b2))
+print("y = {0} + {1}x1 + {2}x2".format(b0, b1, b2))
