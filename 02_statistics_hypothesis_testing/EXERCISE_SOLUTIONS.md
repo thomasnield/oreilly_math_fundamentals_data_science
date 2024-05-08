@@ -27,7 +27,7 @@ return (x - mean) /  std
 Use the corrected function to calculate the pug's z-score on line 25. 
 
 ```
-my_pug_zscore = x_to_z(my_pug_weight)
+my_pug_zscore = x_to_z(my_pug_weight, mean, stdev)
 ```
 
 ## Task 4
