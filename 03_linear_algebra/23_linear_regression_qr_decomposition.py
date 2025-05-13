@@ -21,3 +21,15 @@ Q, R = qr(X_1)
 b = inv(R).dot(Q.transpose()).dot(Y)
 
 print(b) # [1.93939394 4.73333333]
+
+
+# plot
+import matplotlib.pyplot as plt
+import numpy as np
+# show in chart
+X = np.array([p.x for p in df.itertuples()])
+Y = np.array([p.y for p in df.itertuples()])
+
+plt.plot(X, Y, 'o') # scatterplot
+plt.plot(X, m*X+b) # line
+plt.show()
